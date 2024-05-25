@@ -1,0 +1,36 @@
+/* Define variables para los colores */
+:root {
+    --colorbody: #1A211F; /* Color de fondo del cuerpo */
+    --ColorBordeReloj: #01C2AF; /* Color del borde del reloj */
+}
+
+/* Estilos para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 48px; /* Tamaño de fuente para todos los elementos */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    background: var(--colorbody); /* Utiliza el color de fondo definido */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el elemento con clase 'reloj' */
+.reloj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Hace que el elemento sea circular */
+    border: .5rem solid var(--ColorBordeReloj); /* Utiliza el color de borde definido */
+    height: 300px;
+    width: 300px;
+    color: var(--ColorBordeReloj); /* Color del texto dentro del reloj */
+}
